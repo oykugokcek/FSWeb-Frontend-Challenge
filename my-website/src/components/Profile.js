@@ -2,19 +2,19 @@ import React from "react";
 
 const profileData = [
   {
-    title: "Doğum Tarihi",
+    title: "Birthdate",
     info: "12.10.1996",
   },
   {
-    title: "İkamet Şehri",
+    title: "Current Address",
     info: "Muğla",
   },
   {
-    title: "Öğrenim Durumu",
-    info: "Hacettepe Ünv. Kimya Mühendisliği, 2015",
+    title: "Education",
+    info: "Hacettepe University Chemical Engineering, 2021",
   },
   {
-    title: "Tercih Ettiği Rol",
+    title: "Preferred Role",
     info: "Frontend, UI",
   },
 ];
@@ -26,7 +26,7 @@ function Profile() {
       <div className="flex flex-col items-center gap-[64px] lg:flex-row justify-center">
         <div className="bg-white p-4 w-2/3 rounded-xl shadow-[8px_9px_rgba(82,82,82,0.5)] lg:max-w-[500px] lg:pl-[41px] lg:py-[36px] ">
           {/* widthi nasıl vercez? */}
-          <h3 className="text-medium text-[#ea2678] mb-8">Basic Information</h3>
+          <h3 className="text-medium text-[#ea2678] mb-8">Personal Information</h3>
           <div className="flex flex-col gap-[22px]">
             {profileData.map((item) => {
               return (
@@ -43,13 +43,16 @@ function Profile() {
             About me
           </h3>
           <p className="text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-            aut, odit laborum aliquam voluptatum nisi mollitia.
+          After my undergraduate education, I decided to change
+my career according to my skills such as patience,
+creativity, and algorithmic thinking.
           </p>
           <p className="text-base ">
             {" "}
-            Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod
-            deserunt quam temporibus cumque magnam!{" "}
+            Whatever the purpose,
+I believe it is more important to take pleasure in the
+process than the result. I am self-aware and adaptable, so
+I can readily cope with difficult situations.{" "}
           </p>
         </div>
       </div>
