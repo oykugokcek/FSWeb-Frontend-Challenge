@@ -8,7 +8,7 @@ function Footer() {
       </p>
       <div className="flex flex-col m-9 font-medium">
         <a className="text-[#1769FF]">GitHub</a>
-        <a>Personal Blog</a>
+     
         <a className="text-[#0077B5]">Linkedin</a>
         <a className="text-[#AF0C48]">Email</a>
       </div>

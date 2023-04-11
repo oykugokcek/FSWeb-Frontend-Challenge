@@ -1,6 +1,8 @@
 import React from "react";
 function Header() {
   return (
+    <>
+
     <div className="flex flex-wrap flex-col-reverse w-full  mx-auto gap-10 lg:flex-row lg:flex-nowrap lg:max-w-6xl lg:pt-[151px] lg:pb-[94px] lg:w-9/12">
       <div className="flex flex-col gap-5  mx-auto text-center w-2/3 lg:text-left lg:w-1/2">
         <div className="relative text-2xl leading-none after:content-[''] after:bg-[#E92577] after:block after:rounded after:absolute after:w-32 after:h-[28px] after:-z-50 after:top-20 after:left-13  ">
@@ -14,6 +16,7 @@ function Header() {
         <div></div>
         <div className="mt-9">
           <div className="flex gap-5 w-[84px] mx-auto pb-5 lg:mx-0">
+            <a>
             <svg
               width="31"
               height="35"
@@ -26,6 +29,7 @@ function Header() {
                 fill="#0A0A14"
               />
             </svg>
+            </a>
             <svg
               width="34"
               height="37"
@@ -39,10 +43,10 @@ function Header() {
               />
             </svg>
           </div>
-          <div className="pb-16 lg:pb-0">
+          {/* <div className="pb-16 lg:pb-0">
             Currently Freelancing for UX, UI, & Web Design Project. <br />{" "}
             Invite me to join your team -> pratamaiosi@gmail.com
-          </div>
+          </div> */}
         </div>
       </div>
       <img
@@ -50,6 +54,7 @@ function Header() {
         src={require("../images/pp.jfif")}
       />
     </div>
+    </>
   );
 }
 

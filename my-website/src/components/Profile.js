@@ -15,7 +15,7 @@ const profileData = [
   },
   {
     title: "Preferred Role",
-    info: "Frontend, UI",
+    info: "Frontend, Backend",
   },
 ];
 
@@ -61,19 +61,4 @@ I can readily cope with difficult situations.{" "}
 }
 
 export default Profile;
-{
-  /* <div className="flex gap-[22px]">
-<div className="flex text-base flex-col">
-  <h4 className="font-semibold">Doğum Tarihi</h4>
-  <h4 className="font-semibold">İkamet Şehri</h4>
-  <h4 className="font-semibold">Öğretim Durumu</h4>
-  <h4 className="font-semibold">Tercih ettiği rol</h4>
-</div>
-<div className="flex text-base flex-col">
-  <p>12.10.1996</p>
-  <p>Muğla</p>
-  <p>Hacettepe Ünv. Kimya Mühendisliği, 2015</p>
-  <p>Frontedn, UI</p>
-</div>
-</div> */
-}
+

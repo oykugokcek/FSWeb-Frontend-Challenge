@@ -8,17 +8,22 @@ function Projects() {
         <h1 className="text-3xl font-medium  text-center pt-20 pb-16">
           Projects
         </h1>
-        <div className="flex flex-col content-center flex-wrap gap-20 lg:gap-16 lg:flex-row lg:justify-center">
+        <div className="flex flex-col content-center flex-wrap gap-20 md:gap-16 md:flex-row md:justify-center">
           {ProjectsData.map((project) => {
             return (
               <div
-                className={`flex flex-col w-2/3 gap-5 bg-[rgba(221,238,254,1)] rounded-xl pt-10 px-10 lg:w-1/3`}
+                className={`relative flex flex-col w-2/3 gap-5 rounded-xl pt-10 px-10 md:w-1/3`}
+                style={{ backgroundColor: project.backgroundColor }}
               >
-                <h2 className="text-xl font-playfair font-bold">
+                <h2 className="text-xl text-center font-playfair font-bold">
                   {project.name}
                 </h2>
+                <img
+                  src={project.imgsrc}
+                  className="rounded-md w-88 h-60"
+                />
                 <p>{project.explanation}</p>
-                <div className="flex flex-wrap w-11/12 gap-[9px]">
+                <div className="flex flex-wrap w-11/12 gap-[9px] pb-20">
                   {project.libraries.map((library) => {
                     console.log(library);
                     return (
@@ -28,15 +33,12 @@ function Projects() {
                     );
                   })}
                 </div>
-                <div className="flex flex-col gap-4 pt-4 font-semibold text-[20px] lg:flex-row lg:justify-between">
-                  <a className="">View on GitHub</a>
-                  <a>Go to app →</a>
+                
+               
+                <div className="absolute bottom-1 left-10 flex gap-40 pb-6 font-semibold text-[20px] md:gap-16">
+                  <a href= {project.gitHubLink} className="">View on GitHub</a>
+                  <a href={project.vercelLink}>Go to app →</a>
                 </div>
-                <img
-                  src={project.imgsrc}
-                  className="w-[130px] h-[96px] pt-4 self-center lg:pt-16 lg:w-[236px] lg:h-[208px] "
-                />
-                <div className="static h-0 before:bg-pcImg before:bg-contain before:bg-no-repeat before:content:[''] before:block before:relative before:z-auto  before:h-[280px] before:bottom-[132px] lg:before:bottom-[219px] lg:before:left-2"></div>
               </div>
             );
           })}
