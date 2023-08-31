@@ -20,7 +20,7 @@ export const ProjectsData = [
       "In this project, you can view the details of the movie that interests you, modify the information you want to change, and add a new movie. Additionally, you can add your favorite movies to the favorites list. The data transfer between components is implemented using the Redux library.",
     libraries: ["react", "vercel", "redux", "router", "tailwindcss"],
     gitHubLink: "https://github.com/oykugokcek/fsweb-s10g3-redux-watchlist",
-    vercelLink: "https://fsweb-s10g3-redux-watchlist-982u.vercel.app",
+    vercelLink: "https://film-project-eight.vercel.app/movies",
     imgsrc: reactMovieList,
     backgroundColor: "#DDC3D0 ",
   },
